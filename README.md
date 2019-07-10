@@ -79,4 +79,4 @@ server {
 The Tiles API can also be launched via Docker using the following example:
 
 ```sh
-docker run -d --name tiles-api -e MongoURI='mongodb://username:pass@host.io:27017/database' -p 4001:4001 -v "$PWD":/usr/src/app -w /usr/src/app node:8 "yarn" "start"```
+docker run -d --name tiles-api -e MongoURI='mongodb://username:pass@host.io:27017/database' -p 4001:4001 -v "$PWD":/usr/src/app -w /usr/src/app node:8 "npm" "start"```
