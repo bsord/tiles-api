@@ -9,23 +9,26 @@ jobs:
   buildx:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - 
+        name: Checkout repo
         uses: actions/checkout@master
           with:
             ref: master
-      - name: Login to docker
+      - 
+        name: Login to docker
         uses: azure/container-actions/docker-login@master
         with:
           # login-server: contoso.azurecr.io
           username: ${{ secrets.DockerUsername }}
           password: ${{ secrets.DOCKERPassword }}
-
-      - name: Set up Docker Buildx
+      - 
+        name: Set up Docker Buildx
         id: buildx
         uses: crazy-max/ghaction-docker-buildx@master
         with:
           version: latest
-      - name: Run Buildx
+      - 
+        name: Run Buildx
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
@@ -33,7 +36,8 @@ jobs:
             . \
             -t fairbanksio/tiles-api:${{ github.sha }}
             --push
-      - name: Docker Push Image
+      - 
+        name: Docker Push Image
         run: |
           set -x
           docker fairbanksio/tiles-api:${{ github.sha }}
