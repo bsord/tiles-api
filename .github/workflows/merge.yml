@@ -21,20 +21,17 @@ jobs:
         with:
           version: latest
       -
-        name: Run Buildx
+        name: Run Buildx and publish
+        env:
+          DOCKER_USERNAME: ${{ secrets.DockerUsername }}
+          DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
         run: |
+          echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
-            --output "type=image,push=false" \
             . \
-            -t fairbanksio/tiles-api:latest
-      - 
-        name: Docker Login
-        uses: azure/container-actions/docker-login@master
-        with:
-          # login-server: contoso.azurecr.io
-          username: ${{ secrets.DockerUsername }}
-          password: ${{ secrets.DockerPassword }}
+            -t fairbanksio/tiles-api:latest \
+            --push
       - 
         name: Push Image
         run: |
