@@ -27,7 +27,7 @@ jobs:
       - name: Hello world
         run: echo Hello world $FIRST_NAME $middle_name $Last_Name!
         env:
-          FIRST_NAME: Mona
+          FIRST_NAME: ${{ secrets.DOCKER_HUB_USER }}
           middle_name: The
           Last_Name: Octocat
       -
