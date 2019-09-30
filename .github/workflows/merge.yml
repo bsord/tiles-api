@@ -24,11 +24,12 @@ jobs:
       -
         name: Available platforms
         run: echo ${{ steps.buildx.outputs.platforms }}
+
       -
         name: Run Buildx
         env: # Or as an environment variable
-          DOCKER_USER: ${{ secrets.DOCKER_HUB_USER }}
-          DOCKER_PASS: ${{ secrets.DOCKER_HUB_PASS }}
+          DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USER }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_PASS }}
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
