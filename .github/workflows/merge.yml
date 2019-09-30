@@ -31,7 +31,7 @@ jobs:
             -t fairbanksio/tiles-api:${{ github.sha }}
             --push
       - 
-        name: Publish to DockerHub
+        name: Publish to Docker
         uses: azure/docker-login@v1
         with:
           login-server: index.docker.io
