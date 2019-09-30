@@ -1,11 +1,8 @@
 name: buildx
 
 on:
-  pull_request:
+  merge:
     branches: master
-  push:
-    branches: master
-    tags:
 
 jobs:
   buildx:
