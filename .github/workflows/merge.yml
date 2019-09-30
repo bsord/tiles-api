@@ -1,13 +1,14 @@
 name: buildx
 
 on:
-  merge:
+  pull:
     branches: master
 
 jobs:
   buildx:
     runs-on: ubuntu-latest
     steps:
+    
       -
         name: Checkout
         uses: actions/checkout@v1
@@ -20,13 +21,11 @@ jobs:
       -
         name: Available platforms
         run: echo ${{ steps.buildx.outputs.platforms }}
-      
-      -
-        name: Login to docker hub
-        run: |
-          ${{ secrets.DOCKER_HUB_PASS }} | docker login --username ${{ secrets.DOCKER_HUB_USER }} --password-stdin
       -
         name: Run Buildx
+        env: # Or as an environment variable
+          DOCKER_USER: ${{ secrets.DOCKER_HUB_USER }}
+          DOCKER_PASS: ${{ secrets.DOCKER_HUB_PASS }}
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
