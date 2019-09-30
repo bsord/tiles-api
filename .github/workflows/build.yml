@@ -1,8 +1,10 @@
-name: buildx
+name: CrossPlatform - Build
 
 on:
   pull_request:
-    branches: develop
+    branches:
+      - master
+      - develop
     types: [opened, edited]
 
 jobs:

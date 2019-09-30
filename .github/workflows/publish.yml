@@ -1,4 +1,4 @@
-name: buildx-publish
+name: CrossPlatform - Publish
 
 on:
   pull_request:
