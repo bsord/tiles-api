@@ -9,7 +9,6 @@ jobs:
   buildx:
     runs-on: ubuntu-latest
     steps:
-    
       -
         name: Checkout
         uses: actions/checkout@v1
@@ -29,12 +28,15 @@ jobs:
             --output "type=image,push=false" \
             . \
             -t fairbanksio/tiles-api:latest
-      - uses: azure/container-actions/docker-login@master
+      - 
+        name: Docker Login
+        uses: azure/container-actions/docker-login@master
         with:
           # login-server: contoso.azurecr.io
           username: ${{ secrets.DockerUsername }}
           password: ${{ secrets.DockerPassword }}
-      - name: Docker Push Image
+      - 
+        name: Docker Push Image
         run: |
           set -x
           docker push fairbanksio/tiles-api:latest
