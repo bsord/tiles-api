@@ -9,6 +9,7 @@ jobs:
   buildx:
     runs-on: ubuntu-latest
     steps:
+    
       -
         name: Checkout
         uses: actions/checkout@v1
@@ -21,17 +22,19 @@ jobs:
         with:
           version: latest
       -
-        name: Available platforms
-        run: echo ${{ steps.buildx.outputs.platforms }}
-      -
         name: Run Buildx
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
-            -t fairbanksio/tiles-api:${{ github.sha }} \
-            .
-      - uses: azure/docker-login@v1
+            --output "type=image,push=true" \
+            . \
+            -t fairbanksio/tiles-api:${{ github.sha }}
+            --push
+      - 
+        name: Publish to DockerHub
+        uses: azure/docker-login@v1
         with:
+          login-server: index.docker.io
           username: ${{ secrets.DockerUsername }}
           password: ${{ secrets.DockerPassword }}
         run: |
