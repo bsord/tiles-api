@@ -37,5 +37,4 @@ jobs:
           login-server: index.docker.io
           username: ${{ secrets.DockerUsername }}
           password: ${{ secrets.DockerPassword }}
-        run: |
-          docker push fairbanksio/tiles-api:${{ github.sha }}
+        run: docker push fairbanksio/tiles-api:${{ github.sha }}
