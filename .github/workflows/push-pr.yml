@@ -3,6 +3,7 @@ name: buildx
 on:
   pull_request:
     branches: master
+    types: [opened, edited]
   push:
     branches: master
     tags:

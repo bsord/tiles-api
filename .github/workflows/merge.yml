@@ -1,11 +1,9 @@
-name: buildx
+name: buildx-publish
 
 on:
   pull_request:
     branches: master
-  push:
-    branches: master
-    tags:
+    types: [closed]
 
 jobs:
   buildx:
