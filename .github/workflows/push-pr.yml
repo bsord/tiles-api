@@ -28,8 +28,6 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_PASS }}
         run: |
           echo "$DOCKER_USERNAME" "$DOCKER_PASSWORD"
-        run: |
-          docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
       -
         name: Run Buildx
         run: |
