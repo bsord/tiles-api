@@ -31,7 +31,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USER }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_PASS }}
         run: |
-          echo "$DOCKER_USERNAME"
+          echo $DOCKER_USERNAME
       -
         name: Run Buildx
         run: |
