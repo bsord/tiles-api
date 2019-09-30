@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
-        name: Checkout
+        name: Checkout Repo
         uses: actions/checkout@v1
         with:
           ref: master
       -
-        name: Set up Docker Buildx
+        name: Set up BuildX
         id: buildx
         uses: crazy-max/ghaction-docker-buildx@master
         with:
@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.DockerUsername }}
           password: ${{ secrets.DockerPassword }}
       - 
-        name: Docker Push Image
+        name: Push Image
         run: |
           set -x
           docker push fairbanksio/tiles-api:latest
