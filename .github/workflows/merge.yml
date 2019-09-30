@@ -13,6 +13,8 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v1
+        with:
+          ref: master
       -
         name: Set up Docker Buildx
         id: buildx
