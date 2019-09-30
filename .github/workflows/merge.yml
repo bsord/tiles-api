@@ -26,10 +26,9 @@ jobs:
         run: |
           docker buildx build \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
-            --output "type=image,push=true" \
+            --output "type=image,push=false" \
             . \
             -t fairbanksio/tiles-api:latest
-            --push
       - uses: azure/container-actions/docker-login@master
         with:
           # login-server: contoso.azurecr.io
