@@ -28,10 +28,10 @@ jobs:
       -
         name: Login to docker
         env: # Or as an environment variable
-          DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USER }}
+          DOCKER_USERNAME: 
           DOCKER_PASSWORD: ${{ secrets.DOCKER_HUB_PASS }}
         run: |
-          echo $DOCKER_USERNAME
+          echo ${{ secrets.DOCKER_HUB_PASS }} | docker login -u ${{ secrets.DOCKER_HUB_USER }} --password-stdin
       -
         name: Run Buildx
         run: |
