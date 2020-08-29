@@ -6,6 +6,7 @@ const index = require("./routes/index");
 const socketsHandler = require("./routes/socket");
 const bodyParser = require('body-parser');
 const stoppable = require('stoppable');
+const cors = require('cors');
 
 // Initialize database models and connect.
 const { connectDb } = require("./models");
@@ -15,6 +16,7 @@ connectDb()
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'true'}));
+app.use(cors())
 app.use(index);
 const server = stoppable(http.createServer(app));
 const io = socketIo(server);
