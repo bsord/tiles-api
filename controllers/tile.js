@@ -54,6 +54,7 @@ exports.post = (req, res) => {
     // save the user
     newTile.save(function(err) {
       if (err) {
+        console.log(err)
         return res.json({success: false, msg: 'Error saving tile'});
 
       }
