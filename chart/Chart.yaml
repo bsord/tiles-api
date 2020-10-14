@@ -1,5 +1,5 @@
 apiVersion: v2
-appVersion: latest
+appVersion: 0.1.0
 description: Backend service with DB for Tiles application
 name: tiles-api
 type: application
