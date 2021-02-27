@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/Fairbanks-io/tiles-api/compare/0.2.0...0.3.0) (2021-02-27)
+
+
+### Features
+
+* **autoscale:** remove memory spec ([975b485](https://github.com/Fairbanks-io/tiles-api/commit/975b485065719b4fa1c2e4a0791d2c6f288b7bf3))
+
+
+
 # [0.2.0](https://github.com/Fairbanks-io/tiles-api/compare/0.1.1...0.2.0) (2021-01-17)
 
 
