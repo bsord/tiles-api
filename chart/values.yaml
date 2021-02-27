@@ -9,7 +9,7 @@ autoscaling:
   minReplicas: 2
   maxReplicas: 10
   targetCPUUtilizationPercentage: 50
-  targetMemoryUtilizationPercentage: 75
+  #targetMemoryUtilizationPercentage: 75
 minAvailable: 1
 ingress:
   annotations:
@@ -39,7 +39,7 @@ resources:
   #   memory: 128Mi
   requests:
     cpu: 10m
-    memory: 100Mi
+    #memory: 100Mi
 securityContext: {}
 service:
   port: 80
