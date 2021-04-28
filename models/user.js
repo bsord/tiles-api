@@ -10,7 +10,7 @@ var UserSchema = new mongoose.Schema({
         required: true,
         trim: true,
         unique: true,
-        match: "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+        match: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ // eslint-disable-line
     },
     picture: String,
     admin: {
