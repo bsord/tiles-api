@@ -1,3 +1,12 @@
+## [0.4.4](https://github.com/Fairbanks-io/tiles-api/compare/0.4.3...0.4.4) (2021-04-28)
+
+
+### Bug Fixes
+
+* **auth:** remove github auth ([7c90470](https://github.com/Fairbanks-io/tiles-api/commit/7c90470a149a55381d28f674b4f482f64586d618))
+
+
+
 ## [0.4.3](https://github.com/Fairbanks-io/tiles-api/compare/0.4.2...0.4.3) (2021-04-28)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **authentication:** implement google auth ([1fa7fb2](https://github.com/Fairbanks-io/tiles-api/commit/1fa7fb24bc393fbaae3f491ce1a46987f98d6614))
-
-
-
-# [0.3.0](https://github.com/Fairbanks-io/tiles-api/compare/0.2.0...0.3.0) (2021-02-27)
-
-
-### Features
-
-* **autoscale:** remove memory spec ([975b485](https://github.com/Fairbanks-io/tiles-api/commit/975b485065719b4fa1c2e4a0791d2c6f288b7bf3))
 
 
 
