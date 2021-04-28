@@ -2,13 +2,13 @@
   Tiles API
 </h1>
 
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/fairbanksio/tiles-api.svg)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/fairbanksio/tiles-api.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/Fairbanks-io/tiles-api.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/fairbanksio/tiles-api.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/Fairbanks-io/tiles-api.svg)
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/bsord/tiles-api.svg)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/bsord/tiles-api.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/bsord/tiles-api.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/bsord/tiles-api.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/bsord/tiles-api.svg)
 
-Backend API for [Tiles](https://github.com/Fairbanks-io/tiles-client); helps with creating/saving boards, authenticating users and managing chatrooms.
+Backend API for [Tiles](https://github.com/bsord/tiles-client); helps with creating/saving boards, authenticating users and managing chatrooms.
 
 ## Getting Started
 
@@ -19,13 +19,13 @@ The following will need to be installed before proceeding:
 - Node v8+
 - Mongo DB
 - Nginx
-- [Tiles Client](https://github.com/Fairbanks-io/tiles-client)
+- [Tiles Client](https://github.com/bsord/tiles-client)
 
 #### Clone the Project
 
 ```sh
 # Clone it
-git clone https://github.com/Fairbanks-io/tiles-api.git
+git clone https://github.com/bsord/tiles-api.git
 cd tiles-api/
 ```
 
