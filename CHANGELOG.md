@@ -1,3 +1,12 @@
+## [0.4.3](https://github.com/Fairbanks-io/tiles-api/compare/0.4.2...0.4.3) (2021-04-28)
+
+
+### Bug Fixes
+
+* **auth:** add google auth support to chart ([f6d270d](https://github.com/Fairbanks-io/tiles-api/commit/f6d270d16d516420ea27ac580b6e58a76e12165a))
+
+
+
 ## [0.4.2](https://github.com/Fairbanks-io/tiles-api/compare/0.4.1...0.4.2) (2021-04-28)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **autoscale:** remove memory spec ([975b485](https://github.com/Fairbanks-io/tiles-api/commit/975b485065719b4fa1c2e4a0791d2c6f288b7bf3))
-
-
-
-# [0.2.0](https://github.com/Fairbanks-io/tiles-api/compare/0.1.1...0.2.0) (2021-01-17)
-
-
-### Features
-
-* **autoscale:** add HA support ([79ae6d2](https://github.com/Fairbanks-io/tiles-api/commit/79ae6d2e8465d6f53714fe19e3236c2a7f17e095))
 
 
 
