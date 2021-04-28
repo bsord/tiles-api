@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/Fairbanks-io/tiles-api/compare/0.3.0...0.4.0) (2021-04-28)
+
+
+### Features
+
+* **authentication:** implement google auth ([1fa7fb2](https://github.com/Fairbanks-io/tiles-api/commit/1fa7fb24bc393fbaae3f491ce1a46987f98d6614))
+
+
+
 # [0.3.0](https://github.com/Fairbanks-io/tiles-api/compare/0.2.0...0.3.0) (2021-02-27)
 
 
