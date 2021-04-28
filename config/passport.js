@@ -44,13 +44,3 @@ passport.use(new GoogleTokenStrategy({
   })
 );
 
-/* passport.use(new GitHubTokenStrategy({
-    clientID: process.env.GITHUB_CLIENT,
-    clientSecret: process.env.GITHUB_SECRET,
-    passReqToCallback: true,
-    scope: [ 'user:email' ]
-}, function(req, accessToken, refreshToken, profile, done) {
-    User.upsertGithubUser(accessToken, refreshToken, profile, function(err, user) {
-      return done(err, user);
-  });
-})); */
