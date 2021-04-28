@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/Fairbanks-io/tiles-api/compare/0.4.1...0.4.2) (2021-04-28)
+
+
+### Bug Fixes
+
+* **auth:** ignore lint errors related to regex ([2ff6006](https://github.com/Fairbanks-io/tiles-api/commit/2ff6006bb8eefc84d1f18d8926213029aeaf894b))
+
+
+
 ## [0.4.1](https://github.com/Fairbanks-io/tiles-api/compare/0.4.0...0.4.1) (2021-04-28)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **autoscale:** add HA support ([79ae6d2](https://github.com/Fairbanks-io/tiles-api/commit/79ae6d2e8465d6f53714fe19e3236c2a7f17e095))
-
-
-
-## [0.1.1](https://github.com/Fairbanks-io/tiles-api/compare/0.1.0...0.1.1) (2020-10-14)
-
-
-### Bug Fixes
-
-* **workflow:** added todo ([8bca90a](https://github.com/Fairbanks-io/tiles-api/commit/8bca90ac413ea2b246382ec7f5c2e53be87ebb55))
 
 
 
