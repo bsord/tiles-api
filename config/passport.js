@@ -44,7 +44,7 @@ passport.use(new GoogleTokenStrategy({
   })
 );
 
-passport.use(new GitHubTokenStrategy({
+/* passport.use(new GitHubTokenStrategy({
     clientID: process.env.GITHUB_CLIENT,
     clientSecret: process.env.GITHUB_SECRET,
     passReqToCallback: true,
@@ -53,4 +53,4 @@ passport.use(new GitHubTokenStrategy({
     User.upsertGithubUser(accessToken, refreshToken, profile, function(err, user) {
       return done(err, user);
   });
-}));
+})); */
