@@ -44,6 +44,8 @@ spec:
             value: {{ .Values.mongoURI }}
           - name: "Redis_Hostname"
             value: {{ .Values.redisHost }}
+          - name: "Redis_Password"
+            value: {{ .Values.redisPassword }}
           - name: "GOOGLE_CLIENT"
             value: {{ .Values.googleClient }}
           - name: "GOOGLE_SECRET"
