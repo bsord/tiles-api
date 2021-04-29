@@ -1,3 +1,12 @@
+## [0.4.6](https://github.com/Fairbanks-io/tiles-api/compare/0.4.5...0.4.6) (2021-04-29)
+
+
+### Bug Fixes
+
+* **auth:** re-add accidentally removed redis env var ([502ff66](https://github.com/Fairbanks-io/tiles-api/commit/502ff6605f2b1cf4f2335c0e926cf9a1dcc394f6))
+
+
+
 ## [0.4.5](https://github.com/Fairbanks-io/tiles-api/compare/0.4.4...0.4.5) (2021-04-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **auth:** ignore lint errors related to regex ([2ff6006](https://github.com/Fairbanks-io/tiles-api/commit/2ff6006bb8eefc84d1f18d8926213029aeaf894b))
-
-
-
-## [0.4.1](https://github.com/Fairbanks-io/tiles-api/compare/0.4.0...0.4.1) (2021-04-28)
-
-
-### Bug Fixes
-
-* **auth:** remove linter errors ([a027588](https://github.com/Fairbanks-io/tiles-api/commit/a027588cb33fe48e765594bf063f37b9ad3fa29b))
 
 
 
