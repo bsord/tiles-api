@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/Fairbanks-io/tiles-api/compare/0.4.6...0.5.0) (2021-07-28)
+
+
+### Features
+
+* **tracing:** initial distributed tracing implementation ([57427ca](https://github.com/Fairbanks-io/tiles-api/commit/57427ca24ec05525bea96b0f660eeadd7672e77f))
+
+
+
 ## [0.4.6](https://github.com/Fairbanks-io/tiles-api/compare/0.4.5...0.4.6) (2021-04-29)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **auth:** add google auth support to chart ([f6d270d](https://github.com/Fairbanks-io/tiles-api/commit/f6d270d16d516420ea27ac580b6e58a76e12165a))
-
-
-
-## [0.4.2](https://github.com/Fairbanks-io/tiles-api/compare/0.4.1...0.4.2) (2021-04-28)
-
-
-### Bug Fixes
-
-* **auth:** ignore lint errors related to regex ([2ff6006](https://github.com/Fairbanks-io/tiles-api/commit/2ff6006bb8eefc84d1f18d8926213029aeaf894b))
 
 
 
