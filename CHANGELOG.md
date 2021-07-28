@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/Fairbanks-io/tiles-api/compare/0.5.1...0.5.2) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** use B3Propagator format ([3c9ecf1](https://github.com/Fairbanks-io/tiles-api/commit/3c9ecf1d8e59b22da4ec5467aaea932cd853301a))
+
+
+
 ## [0.5.1](https://github.com/Fairbanks-io/tiles-api/compare/0.5.0...0.5.1) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **auth:** remove github auth ref ([5626589](https://github.com/Fairbanks-io/tiles-api/commit/562658910b6f2da0b06448cfc79ad66b1a75f1c3))
-
-
-
-## [0.4.4](https://github.com/Fairbanks-io/tiles-api/compare/0.4.3...0.4.4) (2021-04-28)
-
-
-### Bug Fixes
-
-* **auth:** remove github auth ([7c90470](https://github.com/Fairbanks-io/tiles-api/commit/7c90470a149a55381d28f674b4f482f64586d618))
 
 
 
