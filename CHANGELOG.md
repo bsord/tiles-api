@@ -1,3 +1,12 @@
+## [0.5.9](https://github.com/Fairbanks-io/tiles-api/compare/0.5.8...0.5.9) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** disable diag logs and update env var to url ([ea10901](https://github.com/Fairbanks-io/tiles-api/commit/ea1090190c44be03a0bf68c3e2ace9f388702cd0))
+
+
+
 ## [0.5.8](https://github.com/Fairbanks-io/tiles-api/compare/0.5.7...0.5.8) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** switch to Zipkin exporter ([7868048](https://github.com/Fairbanks-io/tiles-api/commit/7868048a6ffa045a6c9aaa7af6c93cb14f815d2e))
-
-
-
-## [0.5.4](https://github.com/Fairbanks-io/tiles-api/compare/0.5.3...0.5.4) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** remove b3propagator ([edc856f](https://github.com/Fairbanks-io/tiles-api/commit/edc856f67c822f2c1465454eb2794661d3ad16c2))
 
 
 
