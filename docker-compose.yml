@@ -29,6 +29,12 @@ services:
       - "16686:16686"
     networks:
       - tiles-api
+  zipkin:
+    image: openzipkin/zipkin:latest
+    ports:
+      - "9411:9411"
+    networks:
+      - tiles-api
 
 networks:
   tiles-api:
