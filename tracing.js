@@ -5,6 +5,7 @@ const { NodeTracerProvider } = require("@opentelemetry/node");
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 const { BatchSpanProcessor } = require("@opentelemetry/tracing");
+const { B3Propagator } = require('@opentelemetry/propagator-b3');
 const { ZipkinExporter } = require("@opentelemetry/exporter-zipkin");
 const { registerInstrumentations } = require("@opentelemetry/instrumentation");
 const { HttpInstrumentation } = require("@opentelemetry/instrumentation-http");
@@ -31,7 +32,9 @@ provider.addSpanProcessor(
   )
 );
 
-provider.register();
+provider.register({
+    propagator: new B3Propagator(),
+});
 
 registerInstrumentations({
   instrumentations: [
