@@ -16,19 +16,12 @@ services:
       - Redis_Password=${Redis_Password}
       - GOOGLE_CLIENT=${GOOGLE_CLIENT}
       - GOOGLE_SECRET=${GOOGLE_SECRET}
-      - TRACING_HOST=${TRACING_HOST}
+      - TRACING_URL=${TRACING_URL}
     healthcheck:
       disable: true
     networks:
       - tiles-api
 
-  jaeger:
-    image: jaegertracing/all-in-one:latest
-    ports:
-      - "6831:6831/udp"
-      - "16686:16686"
-    networks:
-      - tiles-api
   zipkin:
     image: openzipkin/zipkin:latest
     ports:
