@@ -1,3 +1,12 @@
+## [0.5.5](https://github.com/Fairbanks-io/tiles-api/compare/0.5.4...0.5.5) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** switch to Zipkin exporter ([7868048](https://github.com/Fairbanks-io/tiles-api/commit/7868048a6ffa045a6c9aaa7af6c93cb14f815d2e))
+
+
+
 ## [0.5.4](https://github.com/Fairbanks-io/tiles-api/compare/0.5.3...0.5.4) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **semantic commits:** this needs to use the new and improved workflow ([0254c4a](https://github.com/Fairbanks-io/tiles-api/commit/0254c4aa58fe4fac1a736b5222ffae26ff3fcad7))
-
-
-
-# [0.5.0](https://github.com/Fairbanks-io/tiles-api/compare/0.4.6...0.5.0) (2021-07-28)
-
-
-### Features
-
-* **tracing:** initial distributed tracing implementation ([57427ca](https://github.com/Fairbanks-io/tiles-api/commit/57427ca24ec05525bea96b0f660eeadd7672e77f))
 
 
 
