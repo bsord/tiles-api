@@ -1,3 +1,12 @@
+## [0.5.4](https://github.com/Fairbanks-io/tiles-api/compare/0.5.3...0.5.4) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** remove b3propagator ([edc856f](https://github.com/Fairbanks-io/tiles-api/commit/edc856f67c822f2c1465454eb2794661d3ad16c2))
+
+
+
 ## [0.5.3](https://github.com/Fairbanks-io/tiles-api/compare/0.5.2...0.5.3) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **tracing:** initial distributed tracing implementation ([57427ca](https://github.com/Fairbanks-io/tiles-api/commit/57427ca24ec05525bea96b0f660eeadd7672e77f))
-
-
-
-## [0.4.6](https://github.com/Fairbanks-io/tiles-api/compare/0.4.5...0.4.6) (2021-04-29)
-
-
-### Bug Fixes
-
-* **auth:** re-add accidentally removed redis env var ([502ff66](https://github.com/Fairbanks-io/tiles-api/commit/502ff6605f2b1cf4f2335c0e926cf9a1dcc394f6))
 
 
 
