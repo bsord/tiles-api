@@ -3,7 +3,7 @@
 const { diag, DiagConsoleLogger, DiagLogLevel } = require("@opentelemetry/api");
 const { NodeTracerProvider } = require("@opentelemetry/node");
 const { Resource } = require('@opentelemetry/resources');
-const { B3Propagator } = require('@opentelemetry/core');
+const { B3Propagator } = require('@opentelemetry/propagator-b3');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
 const { SimpleSpanProcessor } = require("@opentelemetry/tracing");
 const { JaegerExporter } = require("@opentelemetry/exporter-jaeger");
