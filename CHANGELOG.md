@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/Fairbanks-io/tiles-api/compare/0.5.0...0.5.1) (2021-07-28)
+
+
+### Bug Fixes
+
+* **semantic commits:** this needs to use the new and improved workflow ([0254c4a](https://github.com/Fairbanks-io/tiles-api/commit/0254c4aa58fe4fac1a736b5222ffae26ff3fcad7))
+
+
+
 # [0.5.0](https://github.com/Fairbanks-io/tiles-api/compare/0.4.6...0.5.0) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **auth:** remove github auth ([7c90470](https://github.com/Fairbanks-io/tiles-api/commit/7c90470a149a55381d28f674b4f482f64586d618))
-
-
-
-## [0.4.3](https://github.com/Fairbanks-io/tiles-api/compare/0.4.2...0.4.3) (2021-04-28)
-
-
-### Bug Fixes
-
-* **auth:** add google auth support to chart ([f6d270d](https://github.com/Fairbanks-io/tiles-api/commit/f6d270d16d516420ea27ac580b6e58a76e12165a))
 
 
 
