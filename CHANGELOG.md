@@ -1,3 +1,12 @@
+## [0.5.7](https://github.com/Fairbanks-io/tiles-api/compare/0.5.6...0.5.7) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** turn b3 prop back off ([40ecdd0](https://github.com/Fairbanks-io/tiles-api/commit/40ecdd0211da8c524a995e5245b797db90db398d))
+
+
+
 ## [0.5.6](https://github.com/Fairbanks-io/tiles-api/compare/0.5.5...0.5.6) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** Properly import B3Propagator ([d4b17ab](https://github.com/Fairbanks-io/tiles-api/commit/d4b17ab94f2714d454f5f44d767ba51aff387d97))
-
-
-
-## [0.5.2](https://github.com/Fairbanks-io/tiles-api/compare/0.5.1...0.5.2) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** use B3Propagator format ([3c9ecf1](https://github.com/Fairbanks-io/tiles-api/commit/3c9ecf1d8e59b22da4ec5467aaea932cd853301a))
 
 
 
