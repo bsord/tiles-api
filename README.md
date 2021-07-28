@@ -84,3 +84,4 @@ docker run -d --name tiles-api -e MongoURI='mongodb://username:pass@host.io:2701
 
 ### TODO:
 - [x] Add automated releases
+- [] Add distributed tracing support
