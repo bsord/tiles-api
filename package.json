@@ -1,6 +1,6 @@
 {
   "name": "tiles-api",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "API for Tiles",
   "main": "server.js",
   "repository": {

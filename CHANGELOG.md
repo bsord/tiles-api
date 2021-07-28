@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/Fairbanks-io/tiles-api/compare/0.5.2...0.5.3) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** Properly import B3Propagator ([d4b17ab](https://github.com/Fairbanks-io/tiles-api/commit/d4b17ab94f2714d454f5f44d767ba51aff387d97))
+
+
+
 ## [0.5.2](https://github.com/Fairbanks-io/tiles-api/compare/0.5.1...0.5.2) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **auth:** re-add accidentally removed redis env var ([502ff66](https://github.com/Fairbanks-io/tiles-api/commit/502ff6605f2b1cf4f2335c0e926cf9a1dcc394f6))
-
-
-
-## [0.4.5](https://github.com/Fairbanks-io/tiles-api/compare/0.4.4...0.4.5) (2021-04-28)
-
-
-### Bug Fixes
-
-* **auth:** remove github auth ref ([5626589](https://github.com/Fairbanks-io/tiles-api/commit/562658910b6f2da0b06448cfc79ad66b1a75f1c3))
 
 
 
