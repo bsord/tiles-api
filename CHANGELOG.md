@@ -1,3 +1,12 @@
+## [0.5.8](https://github.com/Fairbanks-io/tiles-api/compare/0.5.7...0.5.8) (2021-07-28)
+
+
+### Bug Fixes
+
+* **tracing:** Add B3 Propagation for the final time ([595fbc6](https://github.com/Fairbanks-io/tiles-api/commit/595fbc6638106de785307847bf6b47f985337dff))
+
+
+
 ## [0.5.7](https://github.com/Fairbanks-io/tiles-api/compare/0.5.6...0.5.7) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** remove b3propagator ([edc856f](https://github.com/Fairbanks-io/tiles-api/commit/edc856f67c822f2c1465454eb2794661d3ad16c2))
-
-
-
-## [0.5.3](https://github.com/Fairbanks-io/tiles-api/compare/0.5.2...0.5.3) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** Properly import B3Propagator ([d4b17ab](https://github.com/Fairbanks-io/tiles-api/commit/d4b17ab94f2714d454f5f44d767ba51aff387d97))
 
 
 
