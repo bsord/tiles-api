@@ -1,6 +1,6 @@
 'use strict';
 
-const { diag, DiagConsoleLogger, DiagLogLevel } = require("@opentelemetry/api");
+//const { diag, DiagConsoleLogger, DiagLogLevel } = require("@opentelemetry/api");
 const { NodeTracerProvider } = require("@opentelemetry/node");
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions');
@@ -19,15 +19,12 @@ const provider = new NodeTracerProvider({
   })
 });
 
-diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.ALL);
-console.log(process.env.TRACING_HOST)
+//diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.ALL);
+
 provider.addSpanProcessor(
   new BatchSpanProcessor(
     new ZipkinExporter({
-        url: process.env.TRACING_HOST
-      // If you are running your tracing backend on another host,
-      // you can point to it using the `url` parameter of the
-      // exporter config.
+        url: process.env.TRACING_URL
     })
   )
 );
@@ -38,7 +35,9 @@ provider.register({
 
 registerInstrumentations({
   instrumentations: [
-    new HttpInstrumentation(),
+    new HttpInstrumentation({
+        ignoreIncomingPaths: ["/healthz"]
+    }),
     new ExpressInstrumentation(),
     new MongooseInstrumentation(),
   ],
