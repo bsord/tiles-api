@@ -50,6 +50,8 @@ spec:
             value: {{ .Values.googleClient }}
           - name: "GOOGLE_SECRET"
             value: {{ .Values.googleSecret }}
+          - name: "TRACING_HOST"
+            value: {{ .Values.tracingHost }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
