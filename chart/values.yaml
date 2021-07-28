@@ -1,7 +1,6 @@
 affinity: {}
 fullnameOverride: ""
 tracingHost: ""
-tracingPort: ""
 image:
   pullPolicy: Always
   repository: bsord/tiles-api
