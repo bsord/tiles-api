@@ -1,4 +1,4 @@
-version: '2.3'
+version: '3.7'
 
 services:
 
@@ -12,5 +12,23 @@ services:
       - .:/app:delegated
     environment:
       - MongoURI=${MongoURI}
+      - Redis_Hostname=${Redis_Hostname}
+      - Redis_Password=${Redis_Password}
+      - GOOGLE_CLIENT=${GOOGLE_CLIENT}
+      - GOOGLE_SECRET=${GOOGLE_SECRET}
+      - TRACING_HOST=${TRACING_HOST}
     healthcheck:
       disable: true
+    networks:
+      - tiles-api
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    ports:
+      - "6831:6831/udp"
+      - "16686:16686"
+    networks:
+      - tiles-api
+
+networks:
+  tiles-api:
