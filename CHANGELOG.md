@@ -1,3 +1,12 @@
+## [0.5.10](https://github.com/Fairbanks-io/tiles-api/compare/0.5.9...0.5.10) (2021-07-30)
+
+
+### Bug Fixes
+
+* **helm:** enable podAnnotations ([0796eb6](https://github.com/Fairbanks-io/tiles-api/commit/0796eb6b83e89066c06240e365f008fb6f0102fc))
+
+
+
 ## [0.5.9](https://github.com/Fairbanks-io/tiles-api/compare/0.5.8...0.5.9) (2021-07-28)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** enable b3 propagation ([91da941](https://github.com/Fairbanks-io/tiles-api/commit/91da94143874e4a91902846b118fd6084a12c249))
-
-
-
-## [0.5.5](https://github.com/Fairbanks-io/tiles-api/compare/0.5.4...0.5.5) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** switch to Zipkin exporter ([7868048](https://github.com/Fairbanks-io/tiles-api/commit/7868048a6ffa045a6c9aaa7af6c93cb14f815d2e))
 
 
 
