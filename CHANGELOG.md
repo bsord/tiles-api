@@ -1,3 +1,12 @@
+## [0.5.13](https://github.com/bsord-io/tiles-api/compare/0.5.12...0.5.13) (2021-12-17)
+
+
+### Bug Fixes
+
+* vulernabilities ([3d1c143](https://github.com/bsord-io/tiles-api/commit/3d1c14364f67642dc6f7a1df4d0834e4653984c3))
+
+
+
 ## [0.5.12](https://github.com/bsord-io/tiles-api/compare/0.5.11...0.5.12) (2021-12-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** disable diag logs and update env var to url ([ea10901](https://github.com/bsord-io/tiles-api/commit/ea1090190c44be03a0bf68c3e2ace9f388702cd0))
-
-
-
-## [0.5.8](https://github.com/bsord-io/tiles-api/compare/0.5.7...0.5.8) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** Add B3 Propagation for the final time ([595fbc6](https://github.com/bsord-io/tiles-api/commit/595fbc6638106de785307847bf6b47f985337dff))
 
 
 
