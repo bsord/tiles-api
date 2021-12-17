@@ -16,9 +16,9 @@ Backend API for [Tiles](https://github.com/bsord/tiles-client); helps with creat
 
 The following will need to be installed before proceeding:
 
-- Node v8+
+- Node v14+
 - Mongo DB
-- Nginx
+- Docker compose
 - [Tiles Client](https://github.com/bsord/tiles-client)
 
 #### Clone the Project
@@ -29,59 +29,14 @@ git clone https://github.com/bsord/tiles-api.git
 cd tiles-api/
 ```
 
-#### Install & Launch the Backend API
+#### Launch project with docker-compose
+
+The Tiles API can also be launched via Docker-Compose using the following example:
 
 ```sh
-npm install
-npm start
+MongoURI='mongodb://username:pass@host.io:27017/database' docker-compose up -d
 ```
 
 The Tiles API should now be serving requests at http://localhost:4001
 
-#### Nginx
 
-The following is an Nginx configuration block for both frontend and backend:
-
-```sh
-server {
-    listen               443  ssl;
-    ssl                  on;
-    ssl_certificate fullchain.pem;
-    ssl_certificate_key privkey.pem;
-    server_name    tiles.mysite.io;
-    large_client_header_buffers 4 8k;
-    location / {
-        proxy_pass      http://127.0.0.1:3000/;
-        # Upgrade for Websockets
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-    }
-    location /socket.io/ {
-            proxy_set_header Upgrade $http_upgrade;
-            proxy_set_header Connection "upgrade";
-            proxy_http_version 1.1;
-            proxy_set_header Host $host;
-            proxy_pass http://127.0.0.1:4001/socket.io/;
-    }
-    location /tiles {
-        proxy_pass      http://127.0.0.1:4001/tiles;
-        # Upgrade for Websockets
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-    }
-}
-```
-
-#### Docker
-
-The Tiles API can also be launched via Docker using the following example:
-
-```sh
-docker run -d --name tiles-api -e MongoURI='mongodb://username:pass@host.io:27017/database' -p 4001:4001 -v "$PWD":/usr/src/app -w /usr/src/app node:8 "npm" "start"
-```
-
-### TODO:
-- [x] Add automated releases
-- [] Add distributed tracing support
