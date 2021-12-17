@@ -1,3 +1,12 @@
+## [0.5.14](https://github.com/bsord-io/tiles-api/compare/0.5.13...0.5.14) (2021-12-17)
+
+
+### Bug Fixes
+
+* outdated helm push plugin ([e598726](https://github.com/bsord-io/tiles-api/commit/e598726053ea785b6bd62f8446196cf89be5138e))
+
+
+
 ## [0.5.13](https://github.com/bsord-io/tiles-api/compare/0.5.12...0.5.13) (2021-12-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **helm:** enable podAnnotations ([0796eb6](https://github.com/bsord-io/tiles-api/commit/0796eb6b83e89066c06240e365f008fb6f0102fc))
-
-
-
-## [0.5.9](https://github.com/bsord-io/tiles-api/compare/0.5.8...0.5.9) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** disable diag logs and update env var to url ([ea10901](https://github.com/bsord-io/tiles-api/commit/ea1090190c44be03a0bf68c3e2ace9f388702cd0))
 
 
 
