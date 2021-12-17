@@ -50,6 +50,12 @@ spec:
             value: {{ .Values.redisHost }}
           - name: "Redis_Password"
             value: {{ .Values.redisPassword }}
+          - name: "GOOGLE_CLIENT"
+            value: {{ .Values.googleClient }}
+          - name: "GOOGLE_SECRET"
+            value: {{ .Values.googleSecret }}
+          - name: "TRACING_URL"
+            value: {{ .Values.tracingURL }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

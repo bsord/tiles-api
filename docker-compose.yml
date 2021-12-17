@@ -1,4 +1,4 @@
-version: '2.3'
+version: '3.7'
 
 services:
 
@@ -12,5 +12,22 @@ services:
       - .:/app:delegated
     environment:
       - MongoURI=${MongoURI}
+      - Redis_Hostname=${Redis_Hostname}
+      - Redis_Password=${Redis_Password}
+      - GOOGLE_CLIENT=${GOOGLE_CLIENT}
+      - GOOGLE_SECRET=${GOOGLE_SECRET}
+      - TRACING_URL=${TRACING_URL}
     healthcheck:
       disable: true
+    networks:
+      - tiles-api
+
+  zipkin:
+    image: openzipkin/zipkin:latest
+    ports:
+      - "9411:9411"
+    networks:
+      - tiles-api
+
+networks:
+  tiles-api:

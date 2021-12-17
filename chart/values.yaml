@@ -1,9 +1,17 @@
 affinity: {}
 fullnameOverride: ""
+tracingURL: ""
 image:
   pullPolicy: Always
   repository: bsord/tiles-api
 imagePullSecrets: []
+autoscaling:
+  enabled: false
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 50
+  #targetMemoryUtilizationPercentage: 75
+minAvailable: 1
 ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
@@ -22,7 +30,17 @@ nameOverride: ""
 nodeSelector: {}
 podSecurityContext: {}
 replicaCount: 1
-resources: {}
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  requests:
+    cpu: 10m
+    #memory: 100Mi
 securityContext: {}
 service:
   port: 80
