@@ -1,3 +1,12 @@
+## [0.5.15](https://github.com/bsord-io/tiles-api/compare/0.5.14...0.5.15) (2021-12-17)
+
+
+### Bug Fixes
+
+* mongo no longer used feature ([fa3f382](https://github.com/bsord-io/tiles-api/commit/fa3f3824020a108293b6dff1a4af009bcabc4d83))
+
+
+
 ## [0.5.14](https://github.com/bsord-io/tiles-api/compare/0.5.13...0.5.14) (2021-12-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * package git url ([eb30365](https://github.com/bsord-io/tiles-api/commit/eb30365f2f02ea5309efe2628ec6d0c3aa06b006))
-
-
-
-## [0.5.10](https://github.com/bsord-io/tiles-api/compare/0.5.9...0.5.10) (2021-07-30)
-
-
-### Bug Fixes
-
-* **helm:** enable podAnnotations ([0796eb6](https://github.com/bsord-io/tiles-api/commit/0796eb6b83e89066c06240e365f008fb6f0102fc))
 
 
 
