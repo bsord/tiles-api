@@ -1,3 +1,12 @@
+## [0.5.12](https://github.com/bsord-io/tiles-api/compare/0.5.11...0.5.12) (2021-12-17)
+
+
+### Bug Fixes
+
+* wrong package ([b7e9d59](https://github.com/bsord-io/tiles-api/commit/b7e9d593e43d50388990f6c61b3ca2e4e14e5c4e))
+
+
+
 ## [0.5.11](https://github.com/bsord-io/tiles-api/compare/0.5.10...0.5.11) (2021-12-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * **tracing:** Add B3 Propagation for the final time ([595fbc6](https://github.com/bsord-io/tiles-api/commit/595fbc6638106de785307847bf6b47f985337dff))
-
-
-
-## [0.5.7](https://github.com/bsord-io/tiles-api/compare/0.5.6...0.5.7) (2021-07-28)
-
-
-### Bug Fixes
-
-* **tracing:** turn b3 prop back off ([40ecdd0](https://github.com/bsord-io/tiles-api/commit/40ecdd0211da8c524a995e5245b797db90db398d))
 
 
 
