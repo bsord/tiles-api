@@ -1,3 +1,12 @@
+## [0.5.16](https://github.com/bsord-io/tiles-api/compare/0.5.15...0.5.16) (2021-12-18)
+
+
+### Bug Fixes
+
+* delay for probes ([94abb67](https://github.com/bsord-io/tiles-api/commit/94abb671fabacfc3ad229fb89874ca2f19407c0a))
+
+
+
 ## [0.5.15](https://github.com/bsord-io/tiles-api/compare/0.5.14...0.5.15) (2021-12-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * wrong package ([b7e9d59](https://github.com/bsord-io/tiles-api/commit/b7e9d593e43d50388990f6c61b3ca2e4e14e5c4e))
-
-
-
-## [0.5.11](https://github.com/bsord-io/tiles-api/compare/0.5.10...0.5.11) (2021-12-17)
-
-
-### Bug Fixes
-
-* package git url ([eb30365](https://github.com/bsord-io/tiles-api/commit/eb30365f2f02ea5309efe2628ec6d0c3aa06b006))
 
 
 
