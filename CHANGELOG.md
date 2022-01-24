@@ -1,3 +1,12 @@
+## [0.5.18](https://github.com/bsord-io/tiles-api/compare/0.5.17...0.5.18) (2022-01-24)
+
+
+### Bug Fixes
+
+* missing topologySpreadConstraints ([d75eb17](https://github.com/bsord-io/tiles-api/commit/d75eb17a816a8602f4b232cb05140c214e792e01))
+
+
+
 ## [0.5.17](https://github.com/bsord-io/tiles-api/compare/0.5.16...0.5.17) (2021-12-18)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * outdated helm push plugin ([e598726](https://github.com/bsord-io/tiles-api/commit/e598726053ea785b6bd62f8446196cf89be5138e))
-
-
-
-## [0.5.13](https://github.com/bsord-io/tiles-api/compare/0.5.12...0.5.13) (2021-12-17)
-
-
-### Bug Fixes
-
-* vulernabilities ([3d1c143](https://github.com/bsord-io/tiles-api/commit/3d1c14364f67642dc6f7a1df4d0834e4653984c3))
 
 
 
