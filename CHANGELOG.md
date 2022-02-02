@@ -1,3 +1,12 @@
+## [0.5.20](https://github.com/bsord-io/tiles-api/compare/0.5.19...0.5.20) (2022-02-02)
+
+
+### Bug Fixes
+
+* redis adapter not emitting socket events properly ([d19a9ca](https://github.com/bsord-io/tiles-api/commit/d19a9cab7cf250e1a38126393449d94893441330))
+
+
+
 ## [0.5.19](https://github.com/bsord-io/tiles-api/compare/0.5.18...0.5.19) (2022-02-02)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * delay for probes ([94abb67](https://github.com/bsord-io/tiles-api/commit/94abb671fabacfc3ad229fb89874ca2f19407c0a))
-
-
-
-## [0.5.15](https://github.com/bsord-io/tiles-api/compare/0.5.14...0.5.15) (2021-12-17)
-
-
-### Bug Fixes
-
-* mongo no longer used feature ([fa3f382](https://github.com/bsord-io/tiles-api/commit/fa3f3824020a108293b6dff1a4af009bcabc4d83))
 
 
 
