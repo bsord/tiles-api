@@ -1,3 +1,12 @@
+## [0.5.19](https://github.com/bsord-io/tiles-api/compare/0.5.18...0.5.19) (2022-02-02)
+
+
+### Bug Fixes
+
+* realtime sockets not working due to tracing config ([8f51932](https://github.com/bsord-io/tiles-api/commit/8f51932940dc0e6035a0c86844b51ccac9fb3c51))
+
+
+
 ## [0.5.18](https://github.com/bsord-io/tiles-api/compare/0.5.17...0.5.18) (2022-01-24)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * mongo no longer used feature ([fa3f382](https://github.com/bsord-io/tiles-api/commit/fa3f3824020a108293b6dff1a4af009bcabc4d83))
-
-
-
-## [0.5.14](https://github.com/bsord-io/tiles-api/compare/0.5.13...0.5.14) (2021-12-17)
-
-
-### Bug Fixes
-
-* outdated helm push plugin ([e598726](https://github.com/bsord-io/tiles-api/commit/e598726053ea785b6bd62f8446196cf89be5138e))
 
 
 
