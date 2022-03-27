@@ -181,6 +181,11 @@ jobs:
           kubectl describe serviceaccount
           kubectl describe po
 
+          for pod in `kubectl get po -o json |  jq '.items[] | .metadata.name' | sed 's/"//g'` ; do
+            echo $pod
+            kubectl logs $pod 
+          done
+
   release:
     name: "Release"
     needs: [chart-test]
