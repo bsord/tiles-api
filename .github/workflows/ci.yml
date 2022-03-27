@@ -164,9 +164,15 @@ jobs:
         uses: helm/kind-action@v1.2.0
 
       - name: Install and Test chart
+        id: test-chart
         run: |
           helm install test-release ./chart --wait --debug
           helm test test-release
+
+      - name: Debug Helm Chart
+        if: failure() && steps.test-chart.outcome == 'failure'
+        run: |
+          kubectl get events
 
   release:
     name: "Release"
