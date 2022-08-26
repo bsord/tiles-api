@@ -32,7 +32,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.2",
+    "mongoose": "^6.4.6",
     "mongoose-string-query": "^0.2.7",
     "mongoose-timestamp": "^0.6.0",
     "opentelemetry-instrumentation-mongoose": "^0.23.0",
